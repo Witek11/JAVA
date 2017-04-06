@@ -1,48 +1,37 @@
-package cwiczenie1;
+//package Cwiczenie2b;
 
-public class Test {
-
+public class Test { 
+    
     public static void main(String[] args) {
-        
-      Punkt punkt1 = new Punkt(); //wykorzystanie konstruktora domyślnego do stworzenia obiektu 
-      punkt1.Descript();
-      System.out.println("Masa: "+punkt1.returnMasa());
-      System.out.println("Moment bezwladnosci: "+punkt1.momInertia());
-      System.out.println("Moment bezwladnosci z tw. Steinera: "+punkt1.Steiner(8));
-      System.out.println();
-
-      Punkt punkt2 = new Punkt(6); //wykorzystanie konstruktora z parametrem
-      punkt2.Descript();
-      System.out.println("Masa: "+punkt2.returnMasa());
-      System.out.println("Moment bezwladnosci: "+punkt2.momInertia());
-      System.out.println("Moment bezwladnosci z tw. Steinera: "+punkt2.Steiner(10));
-      System.out.println();
-      
-      punkt1.changeMasa(12); //zmiana masy pierwszego obiektu
-      punkt1.Descript();
-      System.out.println("Masa: "+punkt1.returnMasa());
-      System.out.println("Glowny moment bezwladnosci: "+punkt1.momInertia());
-      System.out.println("Moment bezwladnosci wzgledem nowej osi: "+punkt1.Steiner(8));
-      System.out.println();
-      
-      Punkt[] punkty = new Punkt[3]; //stworzenie tablicy trzech obiektów
-      for(int i=0; i<punkty.length; i++){
-          Punkt pkt = new Punkt(i+2);
-          punkty[i]=pkt;
-          pkt.Descript();
-          int j=i+1;
-          System.out.println("Masa punktu "+j+": "+pkt.returnMasa()+", glowny moment bezwladnosci: "+pkt.momInertia()+", moment wzgledem nowej osi: "+pkt.Steiner(3)+".");
-          System.out.println();
-          System.out.println();
-      }
-     
-     BrylaSztywna setPoints = new BrylaSztywna();
-     setPoints.massCenter();
-     setPoints.Infrom();
-     setPoints.inertiaX2();
-     setPoints.inertiaY2();
-     setPoints.inertiaZ2();
-         
+       /*float dlugosc1;
+       float dlugosc2;
+       Vector2D wektor1 = new Vector2D(3,7);//stworzenie obiektów
+       Vector2D wektor2 = new Vector2D(4,8);
+       Vector2D wektor3 = new Vector2D();
+       Vector2D wektor4 = new Vector2D();
+       Vector2D wektor5 = new Vector2D();
+       Vector2D wektor6 = new Vector2D();
+       Vector2D wektor7 = new Vector2D();
+       wektor3=wektor1.suma(wektor2); //operacje na wektorach
+       wektor4=wektor1.roznica(wektor2);
+       wektor5=wektor3.znormal();
+       wektor6=wektor4.znormal();
+       dlugosc1=wektor3.dlugosc();
+       dlugosc2=wektor4.dlugosc();
+       wektor7=wektor3.iloczyn(5);
+       System.out.println("Wsp. wektora 1 to (3,7)"); //wypisanie informacji o wektorach
+       System.out.println("Wsp. wektora 2 to (4,8)");
+       System.out.println("Wsp. sumy wektorów to "+wektor3);
+       System.out.println("Wsp. różnicy wektorów to"+wektor4);
+       System.out.println("Pierwszy wektor znormalizowany to "+wektor5);
+       System.out.println("Drugi wektor znormalizowany to "+wektor6);
+       System.out.println("Długość pierwszego wektora to "+dlugosc1);
+       System.out.println("Długość drugiego wektora to "+dlugosc2);
+       System.out.println("Długość pierwszego wektora przez stałą 5 to "+wektor7);
+       System.out.println("Suma wektorów: "+wektor1.suma(wektor2));*/
+       
+       SpringApplet aplet = new SpringApplet();
+       aplet.init();
     }
 }
 
